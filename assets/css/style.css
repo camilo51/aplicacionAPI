@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Barlow Condensed", sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+  a:hover {
+    color: #fff; }
+
+.titulo {
+  font-family: "Bebas Neue", cursive; }
+
+.header {
+  background-color: #0B0742;
+  color: #fff; }
+  .header__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem;
+    padding: .5rem 0; }
+    .header__contenedor form {
+      width: 100%;
+      max-width: 50rem; }
+      .header__contenedor form .input-group {
+        flex-wrap: nowrap; }
+        .header__contenedor form .input-group .form-control {
+          font-size: 1.6rem; }
+        .header__contenedor form .input-group .input-group-text {
+          cursor: pointer; }
+  .header__navegacion {
+    display: flex;
+    gap: .5rem; }
+    .header__navegacion a {
+      display: inline-block;
+      padding: 1rem;
+      border-bottom: .1rem solid transparent;
+      transition: all ease 0.5s; }
+      .header__navegacion a:hover {
+        border-color: #fff; }
+  .header .modal.fade {
+    color: #000; }
+    .header .modal.fade #exampleModalLabel {
+      font-size: 3rem; }
+    .header .modal.fade .modal-footer button {
+      font-size: 1.8rem; }
+
+.banner {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30rem;
+  max-height: 30rem; }
+  .banner div {
+    text-align: center; }
+  .banner .titulo {
+    font-size: 10rem; }
+
+.tarjetas {
+  background-color: #101010;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: .5rem; }
+  @media (max-width: 1200px) {
+    .tarjetas {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 800px) {
+    .tarjetas {
+      grid-template-columns: 1fr; } }
+  .tarjetas .tarjeta {
+    color: #fff;
+    display: flex;
+    background-color: #5E72EB;
+    border-radius: .5rem; }
+    .tarjetas .tarjeta__cuerpo {
+      margin-left: 1rem; }
+    .tarjetas .tarjeta__nombre {
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      font-weight: 600;
+      text-decoration: underline; }
+    @media (max-width: 1200px) {
+      .tarjetas .tarjeta__nombre {
+        font-size: 3rem; } }
+    @media (max-width: 800px) {
+      .tarjetas .tarjeta__nombre {
+        font-size: 2rem; } }
+
+.paginacion {
+  display: flex;
+  gap: .5rem; }
+  .paginacion__num {
+    background-color: #FF9190;
+    padding: .8rem;
+    border-radius: .5rem; }

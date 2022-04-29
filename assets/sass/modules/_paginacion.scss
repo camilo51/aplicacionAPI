@@ -1,0 +1,11 @@
+@import "variables";
+
+.paginacion{
+    display: flex;
+    gap: .5rem;
+    &__num{
+        background-color: $melon;
+        padding: .8rem;
+        border-radius:.5rem;
+    }
+}

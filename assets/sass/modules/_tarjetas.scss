@@ -1,0 +1,57 @@
+@import "variables";
+
+.tarjetas{
+    background-color: $oscuro;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: .5rem;
+
+    @media (max-width: 1200px) {
+        &{
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+    }
+    @media (max-width: 800px) {
+        &{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .tarjeta{
+        color: $blanco;
+        display: flex;
+
+        background-color: $azul;
+        border-radius: .5rem;
+
+        &__cuerpo{
+            margin-left: 1rem;
+        }
+        &__nombre{
+            text-transform: uppercase;
+            font-size: 3.5rem;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        @media (max-width: 1200px) {
+            &{
+                &__nombre{
+                    font-size: 3rem;
+                }
+                
+            }
+        }
+        @media (max-width: 800px) {
+            &{
+                &__nombre{
+                    font-size: 2rem;
+                }
+                
+            }
+        }
+
+    }
+}

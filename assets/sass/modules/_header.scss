@@ -1,0 +1,60 @@
+@import "variables";
+
+.header{
+    background-color: $morado-oscuro;
+    color: $blanco;
+
+    &__contenedor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 3rem;
+        padding: .5rem 0;
+
+        form{
+            width: 100%;
+            max-width: 50rem;
+
+            .input-group{
+                flex-wrap: nowrap;
+    
+                .form-control{
+                    font-size: 1.6rem;
+                }
+                .input-group-text{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+    }
+    &__navegacion{
+        display: flex;
+        gap: .5rem;
+
+        a{
+            display: inline-block;
+            padding: 1rem;
+            border-bottom: .1rem solid transparent;    
+            transition: $transition;
+            
+            &:hover{
+                border-color: $blanco;
+            }
+        }
+    }
+
+    .modal.fade{
+        color: $negro;
+        
+        #exampleModalLabel{
+            font-size: 3rem;
+        }
+        .modal-footer{
+            button{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

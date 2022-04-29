@@ -1,0 +1,17 @@
+@import "variables";
+
+.banner{
+    color: $negro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+    max-height: 30rem;
+    div{
+        text-align: center;
+    }
+    .titulo{
+        font-size: 10rem;
+    }
+}
